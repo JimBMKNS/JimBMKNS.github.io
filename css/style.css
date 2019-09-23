@@ -1,0 +1,105 @@
+@font-face {
+    font-family: solid;
+    src: url('../fonts/solid.ttf');
+}
+
+body {
+    font-family: 'solid', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    background-image: url('../images/gigg.gif');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(89, 210, 100);
+}
+
+header ul {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(35, 24, 204);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(35, 24, 204, 1) 14%);
+    padding: 1em;
+    margin: 0;
+    margin-bottom: 20em;
+}
+
+main nav {
+    font-size: 15px;
+    background-color: rgb(89, 210, 100);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(89, 210, 100) 14%);
+    display: flex;
+    align-items: center;
+    margin-bottom: 5em;
+
+}
+
+
+main a:hover {
+    color: rgb(35, 24, 204);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(89, 210, 100)
+}
+
+li {
+    display: inline-block;
+}
+
+main {
+    background-image: url(../images/background-section.png);
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    align-items: center;
+
+}
+
+article {
+    flex: 30%;
+    background-color: rgb(89, 210, 100);
+    box-shadow: inset 0px 1px 18px 4px rgba(0, 0, 0, 1);
+    padding: 40px 105px 40px 40px;
+    margin: 25px auto;
+    max-width: 400px;
+}
+
+article p {
+    color: white;
+}
+
+article h2 {
+    font-size: 35px;
+}
+
+article:hover {
+    background-color: rgb(35, 24, 204);
+    background-size: 400%;
+    background-repeat: no-repeat;
+    color: red;
+}
+
+section article img {
+    max-width: 500px;
+    display: flex;
+    align-items: flex-start;
+}
+
+footer {
+    background-color: rgb(35, 24, 204);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
