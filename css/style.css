@@ -55,7 +55,7 @@ li {
 
 main {
     background-image: url(../images/background-section.png);
-    background-size: 100%;
+    background-size: 25%;
     background-repeat: repeat;
 }
 
@@ -70,7 +70,7 @@ article {
     flex: 30%;
     background-color: rgb(89, 210, 100);
     box-shadow: inset 0px 1px 18px 4px rgba(0, 0, 0, 1);
-    padding: 40px 105px 40px 40px;
+    padding: 40px 40px 40px 40px;
     margin: 25px auto;
     max-width: 400px;
 }
@@ -90,10 +90,39 @@ article:hover {
     color: red;
 }
 
-section article img {
-    max-width: 500px;
+.programma_img {
+    max-width: 100%;
     display: flex;
     align-items: flex-start;
+}
+
+.icoon {
+    max-width: 10%
+}
+
+.icoon_muziek {
+    max-width: 10%;
+}
+
+.section2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    align-items: center;
+}
+
+.artiesten2 {
+    flex: 30%;
+    background-color: rgb(89, 210, 100);
+    box-shadow: inset 0px 1px 18px 4px rgba(0, 0, 0, 1);
+    padding: 20px 85px 20px 20px;
+    margin: 25px auto;
+    max-width: 50%;
+}
+
+.programma_img2 {
+    max-width: 75%;
+    display: flex;
+    align-items: center;
 }
 
 footer {
