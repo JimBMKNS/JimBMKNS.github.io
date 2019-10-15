@@ -13,8 +13,8 @@ body {
     background-color: rgb(89, 210, 100);
 }
 
-header ul {
-    font-size: 15px;
+header nav:nth-child(1) ul {
+    font-size: 1.5em;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -40,13 +40,23 @@ main a:hover {
     color: rgb(35, 24, 204);
 }
 
+nav p {
+    color: white;
+    font-size: 30px
+}
+
 a {
     color: white;
     text-decoration: none;
 }
 
 a:hover {
-    color: rgb(89, 210, 100)
+    color: rgb(89, 210, 100);
+
+}
+
+button:hover {
+    color: rgb(89, 210, 100);
 }
 
 li {
@@ -107,7 +117,7 @@ article:hover {
 
 .section2 {
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 3fr));
     align-items: center;
 }
 
@@ -132,4 +142,51 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     color: white;
+}
+
+
+header nav:nth-child(2) {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: mediumblue;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    z-index: -1;
+}
+
+header nav:nth-child(2).show {
+    opacity: 0.9;
+    z-index: 999;
+}
+
+header nav:nth-child(2) ul {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+header nav:nth-child(2) li {
+
+    font-size: 4em;
+}
+
+
+
+header nav button {
+    font-family: 'solid', sans-serif;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    font-size: 1.2em;
+    color: white;
+}
+
+#mobile_btn {
+    position: relative;
+    z-index: 999999;
 }
