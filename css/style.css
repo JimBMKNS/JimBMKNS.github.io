@@ -41,6 +41,7 @@ header nav:nth-child(1) ul {
     padding: 1em;
     margin: 0;
     margin-bottom: 60vh;
+    line-height: 4;
 }
 
 header nav:nth-child(2) {
@@ -192,8 +193,6 @@ article:hover {
     display: grid;
     grid-template-columns: 1fr;
     padding: 1vw;
-    margin-left: 20%;
-    width: 60%;
 }
 
 .impala:hover {
@@ -202,7 +201,7 @@ article:hover {
 
 
 
-.impala ul img {
+.impala img {
     width: 10%;
     height: 5%;
 }
@@ -231,7 +230,16 @@ article:hover {
 iframe {
     display: flex;
     width: 100%;
-    height: 20;
+}
+
+.impala img:nth-child(1) {
+    max-width: 5%;
+}
+
+.impala ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Classed gebruikt voor programma afbeeldingen want hij pakt de article img:nth-child(3) em (4) niet */
@@ -422,7 +430,7 @@ footer section:nth-child(4) figure img {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     header nav button {
         font-family: 'solid', sans-serif;
         background-color: Transparent;
@@ -430,23 +438,26 @@ footer section:nth-child(4) figure img {
         border: none;
         font-size: 1em;
         color: white;
-        position: relative;
-        left: 19px;
-        top: -10px;
     }
+
+    header nav:nth-child(1) ul {
+        font-size: 0.65em;
+        display: flex;
+        flex-direction: column;
+    }
+
+
 
     .detailsection {
         display: grid;
         grid-template-columns: 1fr;
         position: relative;
-        width: 100%;
-        right: 100px;
+        width: 90%;
     }
 
     .impala {
         display: grid;
         grid-template-columns: 1fr;
-        padding: 3vw;
     }
 
     .impala li {
@@ -460,6 +471,11 @@ footer section:nth-child(4) figure img {
     .impala ul img {
         width: 20%;
         height: 20%
+    }
+
+    .impala ul {
+        padding: 0px;
+        text-align: center;
     }
 
     .impala iframe {
