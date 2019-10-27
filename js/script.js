@@ -7,3 +7,5 @@ function toggleMenu() {
 }
 
 mobile_btn.addEventListener('click', toggleMenu, false);
+
+/* Voor de javascript heb ik hulp gekregen van Max Hauser */
